@@ -4,6 +4,7 @@ export const Sidebar = () => {
 	return (
 		<>
 			<Label>Sidebarでっせ</Label>
+			<Label>GitHub Actionsでデプロイしたぜ！！</Label>
 		</>
 	);
 };
