@@ -4,6 +4,8 @@
     "": {
       "name": "hello-azure",
       "dependencies": {
+        "@azure/msal-browser": "^4.26.0",
+        "@azure/msal-react": "^3.0.21",
         "@radix-ui/react-label": "^2.1.7",
         "@radix-ui/react-slot": "^1.2.3",
         "@tailwindcss/vite": "^4.1.16",
@@ -40,6 +42,12 @@
     },
   },
   "packages": {
+    "@azure/msal-browser": ["@azure/msal-browser@4.26.0", "", { "dependencies": { "@azure/msal-common": "15.13.1" } }, "sha512-Ie3SZ4IMrf9lSwWVzzJrhTPE+g9+QDUfeor1LKMBQzcblp+3J/U1G8hMpNSfLL7eA5F/DjjPXkATJ5JRUdDJLA=="],
+
+    "@azure/msal-common": ["@azure/msal-common@15.13.1", "", {}, "sha512-vQYQcG4J43UWgo1lj7LcmdsGUKWYo28RfEvDQAEMmQIMjSFufvb+pS0FJ3KXmrPmnWlt1vHDl3oip6mIDUQ4uA=="],
+
+    "@azure/msal-react": ["@azure/msal-react@3.0.21", "", { "peerDependencies": { "@azure/msal-browser": "^4.26.0", "react": "^16.8.0 || ^17 || ^18 || ^19" } }, "sha512-V2YUyEgLM2GLXN1mDYVEk/GA4cZEfjmS0xEGx29AGy6paEgZN62pZiYoBr8mVOExft6uT/ZonpOREvFiy8quZQ=="],
+
     "@babel/code-frame": ["@babel/code-frame@7.27.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.27.1", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg=="],
 
     "@babel/compat-data": ["@babel/compat-data@7.28.5", "", {}, "sha512-6uFXyCayocRbqhZOB+6XcuZbkMNimwfVGFji8CTZnCzOHVGvDqzvitu1re2AU5LROliz7eQPhB8CpAMvnx9EjA=="],
