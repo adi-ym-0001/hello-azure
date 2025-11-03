@@ -3,9 +3,15 @@ import { Label } from "@/components/ui/label";
 import { Sidebar } from "@/features/randing/components";
 import { msalInstance } from "@/main";
 import { useMsal } from "@azure/msal-react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/home")({
+	beforeLoad: () => {
+        const accounts = msalInstance.getAllAccounts();
+        if (accounts.length === 0) {
+            throw redirect({ to: "/login" });
+        }
+    },
 	component: RouteComponent,
 });
 
